@@ -134,6 +134,7 @@ h6 {
 .burger {
   border: none;
   background: transparent;
+  padding-left: 115px;
 }
 
 .header__phone {
