@@ -41,8 +41,6 @@ body {
   width: 100%;
   font-size: 100%;
   line-height: 30px;
-  font-size: 20px;
-  color: #1e1744;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -146,7 +144,7 @@ h6 {
 
 .main {
   height: calc(100vh - 79px);
-  background: url(../img/bg.png) no-repeat top/cover;
+  background: url(../img/bg1.png) no-repeat top/cover;
 }
 
 .section__main {
