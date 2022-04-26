@@ -8,13 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body id="body">
     <div class="first-screen">
         <header class="header">
             <div class="container header__container">
-                <a href="" class="logo">
+                <a href="./index.html" class="logo">
                     <img src="./img/logo.svg" alt="A|K" class="logo__img">
                 </a>
                 <button class="burger">
@@ -23,23 +24,23 @@
                 <a class="header__phone" href="tel:+79670549696">+7 967 054 96 96</a>
             </div>
         </header>
-        <section class="main section__main">
+        <section class="main section__main" id="main-page">
             <div class="container main__container">
                 <p class="main__subtitle">Маркетинговое агентство полного&nbsp;цикла SMM.ANASKUZZZZ
                 </p>
                 <h1 class="main__title">Мы специализируемся <br> на&nbsp;продажах и их увеличении <br> за&nbsp;счёт маркетинговых стратегий</h1>
-                <button class="main-btn main__btn">Записаться на бесплатную консультацию</button>
+                <button id="free-consult" class="main-btn main__btn modal-btn">Записаться на бесплатную консультацию</button>
             </div>
         </section>
     </div>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container about__container">
             <h2 class="title about__title">О НАС</h2>
             <p class="text about__text">Мы — большая команда специалистов, начиная от&nbsp;SMM, заканчивая сайтологами 
             и&nbsp;контекстологами, с&nbsp;высокой квалификацией в&nbsp;привлечении потенциальных клиентов, упаковке бизнеса и&nbsp;брендингу компаний любой специфики.</p>
         </div>
     </section>
-    <section class="cases section__cases section">
+    <section class="cases section__cases section" id="cases">
         <div class="container flex-container">
             <h2 class="cases__title title title--center">Кейсы</h2>
             <div class="cases__wrap">
@@ -93,13 +94,13 @@
                     </div>
                 </div>
             </div>
-            <a href="" class="more-btn cases__more-btn">
+            <a href="./cases.html" class="more-btn cases__more-btn">
                 <span class="more-btn__text">все кейсы</span> 
                 <img src="./img/arrow.svg" alt="перейти">
             </a>
         </div>
     </section>
-    <section class="services section">
+    <section class="services section" id="services">
         <div class="container flex-container">
             <h2 class="cases__title title title--center">Услуги</h2>
             <div class="service__wrap">
@@ -131,18 +132,233 @@
                     </a>
                 </div>
                 <div class="service service--long">
-                    <a href="" class="service__link">
-                        <p class="service__text">Дизайнер широкого профиля</p>
+                    <a href="" class="service__link service__link--long">
+                        <p class="service__text service__text--long">Дизайнер широкого профиля</p>
                         <img src="./img/arrow-long.svg" alt="перейти">
                     </a>
                 </div>
             </div>
         </div>
     </section>
+    <section class="steps section" id="steps">
+        <div class="container flex-container">
+            <h2 class="steps__title title title--center">Структура работы</h2>
+            <p class="steps__text text text--center">Или как мы начинаем работу с новыми клиентами?</p>
+            <div class="steps__wrap">
+                <div class="steps__imgs">
+                    <img src="./img/message1.svg" alt="" class="step__img step__img--left">
+                    <img src="./img/message2.svg" alt="" class="step__img step__img--right">
+                    <img src="./img/message3.svg" alt="" class="step__img step__img--left">
+                    <img src="./img/message4.svg" alt="" class="step__img step__img--right">
+                    <img src="./img/message5.svg" alt="" class="step__img step__img--left">
+                    <img src="./img/message6.svg" alt="" class="step__img step__img--right">
+                </div>
+                <div class="steps__text-wrap">
+                    <div class="step steps__step">
+                        <h2 class="title step__title title--red">Шаг <span class="font--roboto"> 1.</span></h2>
+                        <p class="step__text text">Отправляем форму с&nbsp;вопросами для точного раскрытия проблемы и&nbsp;знакомства с&nbsp;проектом</p>
+                    </div>
+                    <div class="step steps__step">
+                        <h2 class="title step__title title--red">Шаг <span class="font--roboto"> 2.</span></h2>
+                        <p class="step__text text">Выбираем день и&nbsp;время для предварительной консультации с&nbsp;маркетологом, где обсуждаем ваши трудности и&nbsp;их&nbsp;решение</p>
+                    </div>
+                    <div class="step steps__step">
+                        <h2 class="title step__title title--red">Шаг <span class="font--roboto"> 3.</span></h2>
+                        <p class="step__text text">Выбираем специалиста и&nbsp;план действий по&nbsp;выполнению поставленной цели</p>
+                    </div>
+                    <div class="step steps__step">
+                        <h2 class="title step__title title--red">Шаг <span class="font--roboto"> 4.</span></h2>
+                        <p class="step__text text">Например: цель&nbsp;&mdash; привлечь 50&nbsp;новых клиентов в&nbsp;бизнес. Выбираем оптимальные площадки, стратегию и&nbsp;начинаем работать</p>
+                    </div>
+                    <div class="step steps__step">
+                        <h2 class="title step__title title--red">Шаг <span class="font--roboto"> 5.</span></h2>
+                        <p class="step__text text">Вас напрямую связывают со&nbsp;специалистами, которые будут выполнять работу. Вы&nbsp;сможете коммуницировать и&nbsp;получать отчеты о&nbsp;выполнении поставленных KPI</p>
+                    </div>
+                    <div class="step steps__step">
+                        <h2 class="title step__title title--red">Шаг <span class="font--roboto"> 6.</span></h2>
+                        <p class="step__text text">Отслеживание результатов, аналитика эффективности. Возможное изменение стратегии или ее&nbsp;модерация.</p>
+                    </div>
+                </div>
+            </div>
+            <p class="steps__desc text">С&nbsp;каждым клиентом необходим индивидуальный подход, поэтому это лишь скелет работы. <br> <br>Наше самое главное правило в&nbsp;ведении проектов&nbsp;&mdash; быть гибкими и&nbsp;уметь вовремя применять эффективные маркетинговые стратегии в&nbsp;развитии вашего бизнеса.</p>
+        </div>
+    </section>
+    <div class="workers section" id="workers">
+        <div class="container flex-container">
+            <h2 class="steps__title title title--center">Сотрудники</h2>
+            <!-- <div class="slider__wrap">
+                <button class="slider__btn--left"><</button>
+                <div class="swiper swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="workers__card">
+                                <img src="./img/olesya.png" alt="Олеся" class="workers__img">
+                                <div class="workers__text-wrap">
+                                    <p class="workers__title">Олеся</p>
+                                    <div class="workers__subtitle">таргетолог агентства</div>
+                                    <p class="workers__desc">Из&nbsp;последних проектов: турагентство, фотограф (за&nbsp;месяц работы заказов было на&nbsp; 126тыс.₽, клик 6,63₽), магазин постельного белья (за&nbsp;первые 2&nbsp;дня работы 19&nbsp;заявок, 7&nbsp;продаж на&nbsp;30тыс.₽) и&nbsp;др. <br><br> Является ведущим таргетологом агентства</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="workers__card">
+                                <img src="./img/olesya.png" alt="Олеся" class="workers__img">
+                                <div class="workers__text-wrap">
+                                    <p class="workers__title">Олеся</p>
+                                    <div class="workers__subtitle">таргетолог агентства</div>
+                                    <p class="workers__desc">Из&nbsp;последних проектов: турагентство, фотограф (за&nbsp;месяц работы заказов было на&nbsp; 126тыс.₽, клик 6,63₽), магазин постельного белья (за&nbsp;первые 2&nbsp;дня работы 19&nbsp;заявок, 7&nbsp;продаж на&nbsp;30тыс.₽) и&nbsp;др. <br><br> Является ведущим таргетологом агентства</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="workers__card">
+                                <img src="./img/olesya.png" alt="Олеся" class="workers__img">
+                                <div class="workers__text-wrap">
+                                    <p class="workers__title">Олеся</p>
+                                    <div class="workers__subtitle">таргетолог агентства</div>
+                                    <p class="workers__desc">Из&nbsp;последних проектов: турагентство, фотограф (за&nbsp;месяц работы заказов было на&nbsp; 126тыс.₽, клик 6,63₽), магазин постельного белья (за&nbsp;первые 2&nbsp;дня работы 19&nbsp;заявок, 7&nbsp;продаж на&nbsp;30тыс.₽) и&nbsp;др. <br><br> Является ведущим таргетологом агентства</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="workers__card">
+                                <img src="./img/olesya.png" alt="Олеся" class="workers__img">
+                                <div class="workers__text-wrap">
+                                    <p class="workers__title">Олеся</p>
+                                    <div class="workers__subtitle">таргетолог агентства</div>
+                                    <p class="workers__desc">Из&nbsp;последних проектов: турагентство, фотограф (за&nbsp;месяц работы заказов было на&nbsp; 126тыс.₽, клик 6,63₽), магазин постельного белья (за&nbsp;первые 2&nbsp;дня работы 19&nbsp;заявок, 7&nbsp;продаж на&nbsp;30тыс.₽) и&nbsp;др. <br><br> Является ведущим таргетологом агентства</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+                <!-- </div>
+                <button class="slider__btn--right">></button> -->
+            <!-- </div>     -->
+        </div>
+    </div>
+
+    <section class="video-section section" id="work-video">
+        <div class="container flex-container">
+            <h2 class="video__title title title--center">Небольшое видео работы <br> нашей команды</h2>
+            <div class="video__wrap">
+                <video src="./video/IMG_9079.MOV" class="video"></video>
+                <p class="video__desc">Тут о <span class="title--red">сплоченности</span><br><span class="title--red">Гибкости</span> подхода<br><span class="title--red">Оперативности</span>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="testimonial-section section" id="testimonial">
+        <div class="container flex-container">
+            <h2 class="testimonial__title title title--center">Отзывы</h2>
+            <div class="swiper swiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial__wrap">
+                            <span class="quote">“</span>
+                            <p class="testimonial__text text text--big">Хочу сказать большое спасибо за консультацию, ты буквально разобрала всю ситуацию с тем, какой стоит использовать подход в поиске клиентов, также живое общение с тобой очень замотивировало, приятно было получить столь теплое и профессиональное наставление с твоей стороны! </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial__wrap">
+                            <span class="quote">“</span>
+                            <p class="testimonial__text text text--big">Хочу сказать большое спасибо за консультацию, ты буквально разобрала всю ситуацию с тем, какой стоит использовать подход в поиске клиентов, также живое общение с тобой очень замотивировало, приятно было получить столь теплое и профессиональное наставление с твоей стороны! </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial__wrap">
+                            <span class="quote">“</span>
+                            <p class="testimonial__text text text--big">Хочу сказать большое спасибо за консультацию, ты буквально разобрала всю ситуацию с тем, какой стоит использовать подход в поиске клиентов, также живое общение с тобой очень замотивировало, приятно было получить столь теплое и профессиональное наставление с твоей стороны! </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial__wrap">
+                            <span class="quote">“</span>
+                            <p class="testimonial__text text text--big">Хочу сказать большое спасибо за консультацию, ты буквально разобрала всю ситуацию с тем, какой стоит использовать подход в поиске клиентов, также живое общение с тобой очень замотивировало, приятно было получить столь теплое и профессиональное наставление с твоей стороны!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+    <section class="review-section section" id="review-video">
+        <div class="container flex-container">
+            <video src="./video/IMG_9079.MOV" class="video-review"></video>
+        </div>
+    </section>
+    <section class="form-section section" id="form">
+        <div class="container flex-container">
+            <h2 class="form__title title title--center title--white">Запишитесь на бесплатную <br> консультацию</h2>
+            <form action="" class="form">
+                <input class="form__input form__input--name" type="text" name="name" id="name" placeholder="Имя">
+                <input class="form__input form__input--tel" type="tel" name="tel" id="tel" placeholder="Телефон">
+                <input class="form__input form__input--email" type="email" name="email" id="email" placeholder="Почта">
+                <textarea class="form__input form__input--desc form__text-area" name="desc" id="desc" placeholder="Опишите кратко ваш проект и вопрос"></textarea>
+                <button class="form__btn" type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer section">
+        <div class="container">
+            <div class="footer__wrap">
+                <a href="./index.html" class="logo">
+                    <img src="./img/logo.svg" alt="A|K" class="logo__img">
+                </a>
+                <div class="footer__lists-wrap">
+                    <ul class="footer__list">
+                        <li class="footer__item footer__list-title">О нас</li>
+                        <li class="footer__item"><a href="#workers" class="footer__link">Сотрудники</a></li>
+                        <li class="footer__item"><a href="#testimonial" class="footer__link">Отзывы</a></li>
+                        <li class="footer__item"><a href="#cases" class="footer__link">Кейсы</a></li>
+                        <li class="footer__item"><a href="#steps" class="footer__link">Структура работы</a></li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item footer__list-title">Связь с нами</li>
+                        <li class="footer__item"><a href="tel:+79670549696" class="footer__link">+7 967 054 96 96</a></li>
+                        <li class="footer__item"><a href="mailto:naaastiaaa15@mail.ru" class="footer__link">naaastiaaa15@mail.ru</a></li>
+                        <li class="footer__item">whatsapp: +7 967 054 96 96</li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link footer__icon">
+                                <img src="./img/tg.svg" alt="">
+                            </a>
+                            <a href="" class="footer__link footer__icon">
+                                <img src="./img/vk.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer__list">
+                        <li class="footer__item footer__list-title">Услуги</li>
+                        <li class="footer__item"><a href="" class="footer__link">SMM-специалист</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Таргетолог</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Контекстолог</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Сайтолог</a></li>
+                        <li class="footer__item"><a href="" class="footer__link">Дизайнер</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="m-free-consult" class="modal modal--consult" id="form">
+        <div class="container modal__container flex-container">
+            <h2 class="modal__title form__title title title--center">Запишитесь на бесплатную <br> консультацию</h2>
+            <button class="close-btn modal__close-btn modal-close"><img src="./img/close.svg" alt=""></button>
+            <form action="" class="form form--modal">
+                <input class="form__input form__input--name form__input--black form__input--modal" type="text" name="name" id="name" placeholder="Имя">
+                <input class="form__input form__input--tel form__input--black form__input--modal" type="tel" name="tel" id="tel" placeholder="Телефон">
+                <input class="form__input form__input--email form__input--black form__input--modal" type="email" name="email" id="email" placeholder="Почта">
+                <textarea class="form__input form__input--desc form__input--black form__input--modal form__text-area" name="desc" id="desc" placeholder="Опишите кратко ваш проект и вопрос"></textarea>
+                <button class="modal__btn form__btn form__btn--red" type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
 
 
 
-
-    <!-- <script src="./script.js"></script> -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> 
+    <script src="./script.js"></script>
+    <script src="./modal.js"></script>
 </body>
 </html>
