@@ -1,4 +1,5 @@
 @import 'nullStyle';
+@import 'cases';
 
 .container {
     width: 1380px;
@@ -76,10 +77,12 @@
     justify-content: space-between;
 }
 .title {
+    text-transform: uppercase;
     font-weight: 600;
-    font-size: 48px;
+    font-size: 36px;
 }
 .title--center {
+    text-align: center;
     margin: auto;
     padding-bottom: 45px;
 }
@@ -144,6 +147,7 @@
 }
 .font--roboto {
     font-family: 'Roboto', sans-serif;
+    color: inherit;
 }
 .more-btn__text {
     text-transform: uppercase;
@@ -159,6 +163,7 @@
 .service__wrap {
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid #000;
 }
 .service {
     position: relative;
@@ -167,14 +172,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 2px solid #000;
+    border: 1px solid #000;
     padding: 0 42px;
 }
 .service--long {
-    width: 100%;
-    align-items: center;    
+    width: 100%; 
+    align-items: center;
 }
 .service__link {
+    display: block;
+    max-width: inherit;
     position: absolute; 
     bottom: 71px;
 }
@@ -184,4 +191,287 @@
     font-size: 28px;
     margin-bottom: 71px;
     text-transform: uppercase;
+}
+.service__text--long {
+    max-width: 100%;
+}
+.text--center {
+    margin: auto;
+}
+.steps__wrap {
+    display: flex;
+    margin-top: 50px;
+}
+.steps__imgs {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.step__img {
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+}
+.step__img--left {
+    align-self: flex-start;
+}
+.step__img--right {
+    align-self: flex-end;
+}
+.steps__text-wrap {
+    width: 40%;
+    margin-left: 60px;
+}
+.title--red {
+    color: #7A0923;
+}
+.step__title {
+    margin-bottom: 21px;
+}
+.steps__step {
+    &:not(:last-child) {
+        margin-bottom: 39px;
+    }
+}
+.steps__desc {
+    margin-top: 60px;
+}
+.swiper{
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+}
+.workers__card {
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 25px 50px 25px;
+    height: inherit;
+}
+.workers__img {
+    width: 100%;
+}
+.workers__title {
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.workers__subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    color: #757575;
+    margin-top: 5px;
+}
+.workers__desc {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.swiper-button-next, .swiper-button-prev{
+    color: #000000;
+}
+.slider__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.swiper {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 90%;
+}
+.slider__btn--left {
+    background: transparent;
+    font-size: 40px;
+    height: auto;
+    display: block;
+    // margin-right: 18px;
+}
+.slider__btn--right {
+    background: transparent;
+    font-size: 40px;
+    height: auto;
+    display: block;
+    // margin-left: 18px;
+} 
+.video__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.video {
+    width: 70%;
+}
+.video__desc {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 36px;
+}
+.testimonial__wrap {
+    display: flex;
+}
+.quote {
+    margin-top: -10px;
+    margin-right: 60px;
+    font-weight: 600;
+    font-size: 144px;
+    line-height: 100%;
+    text-transform: uppercase;
+}
+.testimonial__text {
+    max-width: 80%;
+}
+.text--big {
+    font-size: 28px;
+}
+.swiper-pagination {
+   margin-top: 60px;
+}
+.form-section  {
+    background: #7A0923;
+}
+.title--white {
+    color: #FFFFFF;
+}
+.form {
+    width: 80%;
+    margin: auto;
+}
+.form__input {
+    border: none;
+    background: transparent;
+    border-bottom: 4px solid #fff;
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    padding: 11px 15px;
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+.form__input--name {
+    width: 48%;
+    display: block;
+}
+.form__input--tel, .form__input--email {
+    margin-top: 60px;
+    width: 48%;
+    display: inline-block;
+}
+.form__input--email {
+    margin-left: 3%;
+}
+.form__input--desc {
+    margin-bottom: 170px;
+    margin-top: 60px;
+    display: block;
+    width: 100%;
+}
+.form__text-area {
+    resize: none;
+}
+.form__btn {
+    padding: 37px 86px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    display: block;
+    margin: auto;
+    color: #000000;
+}
+.footer__wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.footer__lists-wrap {
+    display: flex;
+}
+.footer__list {
+    &:not(:last-child) {
+        margin-right: 114px;
+    }
+}
+.footer__list-title {
+    text-transform: uppercase;
+    font-weight: 600 !important;
+    font-size: 24px !important;
+    margin-bottom: 25px !important;
+}
+.footer__item {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 18px;
+}
+.footer__icon {
+    &:not(:last-child) {
+        margin-right: 15px;
+    }
+}
+
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    z-index: 12;
+}
+.no-scroll {
+    height: 100vh;
+    overflow: hidden;
+}
+.modal--open {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.close-btn {
+    background: transparent;
+    border: none;
+}
+.modal__close-btn {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+.modal__container {
+    border-radius: 10px;
+    width: 1100px;
+    background: #fff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+}
+.form__input--black {
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    &::placeholder {
+        color: rgba(0, 0, 0, 0.9);
+    }
+}   
+.form__input--black {
+    font-size: 18px;
+}
+.modal__title {
+    font-size: 28px;
+}
+.modal__btn {
+    font-size: 18px;
+}
+.form--modal .form__input--desc {
+    margin-bottom: 50px !important;
+}
+.form__btn--red {
+    background: #7A0923;
+    color: #fff;
 }
